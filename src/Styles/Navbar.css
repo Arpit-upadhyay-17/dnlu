@@ -1,0 +1,104 @@
+.nav{
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  place-items: center;
+  grid-gap: 10px;
+  padding: 10px;  
+  /* font-family: sans-serif; */
+}
+.un-logo-address{
+    text-align: center;
+}
+
+.un-full-name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.Logo img{
+    width: 120px;
+}
+
+.un-full-name{
+    text-align: center;
+    color: rgb(0, 0, 142);
+}
+
+.menu-links{
+    margin: 10px 20px;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    background-color: rgb(0, 23, 48);
+
+}
+
+
+
+.Link a{
+    padding: 6px;
+    font-size: 16px;
+    color: white;
+    transition: 0.35s all;
+    /* font-weight: 700; */
+    text-decoration: none;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    border-bottom:1px solid  transparent;
+}
+
+.Link a:hover{
+    color: rgb(255, 233, 31);
+    border-bottom: 1px solid rgb(255, 233, 31);
+
+}
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-left: 2px solid rgba(255, 255, 255, 0.453); */
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+.Dropdwon-lists{
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 200px;
+    border-radius: 3px;
+    background-color: rgb(0, 23, 48);
+ 
+    transition: 0.45s ease-in-out;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.dropdown:hover .Dropdwon-lists{
+   
+    height: 280px;
+    opacity: 1;
+}
+.Dropdwon-lists ul{
+    padding: 10px;
+}
+
+.Dropdwon-lists ul li {
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    list-style: none;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    
+    color: rgb(255, 255, 255);
+    /* font-weight: 700; */
+    cursor: pointer;
+}
+.Dropdwon-lists ul li:hover{
+    color: rgb(255, 233, 31);
+    border-bottom: 1px solid rgb(255, 233, 31);
+}
